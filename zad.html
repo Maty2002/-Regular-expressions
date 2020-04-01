@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+    input{
+        outline: none;
+        padding: 2px;
+    }
+</style>
+</head>
+<body>
+
+    <input type="text">
+
+    <script>
+        const input = document.querySelector("input");
+        
+        input.addEventListener("input", () => {
+            if(input.value.match(/[A-Z][a-z]+ [A-Z][a-z]+/)){
+                input.style.borderColor = 'green'
+            }
+            else{
+                input.style.borderColor = 'red'
+            }
+        })
+    </script>
+</body>
+</html>
